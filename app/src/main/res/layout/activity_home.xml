@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calendar"
+        android:onClick="onClickCalendar"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log out" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:layout_marginBottom="11dp"/>
+        <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My profile"
+                android:onClick="onClickAccount"
+                android:layout_marginTop="32dp" android:layout_below="@+id/toDoListButton"
+                android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+        <Button
+                android:id="@+id/toDoListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To-Do"
+                android:onClick="onClickToDo"
+                android:layout_marginTop="29dp"
+                android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
